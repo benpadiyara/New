@@ -4,8 +4,7 @@ public with sharing class AccountController {
         return [SELECT Id, Name FROM Account WITH SECURITY_ENFORCED LIMIT 10];
     }
 //sampl
-//samp123
-//23456
+
     @AuraEnabled(cacheable=true)
     public static Account getSingleAccount() {
         return [
